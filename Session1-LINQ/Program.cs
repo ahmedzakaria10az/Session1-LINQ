@@ -36,6 +36,20 @@ namespace Session1_LINQ
             //    Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}");
             //}
 
+
+            //Question 4
+            //4. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+            //var allProducts = ProductList.Where(p=>p.UnitsInStock > 0 && p.Category == "Condiments");
+
+            //foreach (var product in allProducts)
+            //{
+            //    Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}, Category:{product.Category}");
+            //}
+
+
+            //Question 5
+            //
+
         }
     }
 }
