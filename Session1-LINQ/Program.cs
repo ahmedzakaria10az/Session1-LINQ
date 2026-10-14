@@ -1,10 +1,83 @@
-﻿namespace Session1_LINQ
+﻿using System.Drawing;
+using System.Xml.Linq;
+using static LINQ.DataSources.Source;
+
+namespace Session1_LINQ
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+            //Question 1
+            //1. Get all products from the "Seafood" category. Print each product's name and price.
+
+            //var seafoodProducts = ProductList.Where(p=>p.Category == "Seafood");
+
+            //foreach (var product in seafoodProducts)
+            //{
+            //    Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}");
+            //}
+
+
+            //Question 2
+            //2. Get a list of only the product names from ProductList. Print each name.
+
+            //var productNames = ProductList.Select(p=>p.ProductName);
+
+            //foreach (var name in productNames)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
+
+            //Question 3
+            //3. Get all products where UnitPrice is between 10 and 30
+
+            //var products = ProductList.Where(p=>p.UnitPrice >= 10 && p.UnitPrice <= 30);
+
+            //foreach (var product in products)
+            //{
+            //    Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}");
+            //}
+
+
+            //Question 4
+            //4. Get all products that are in stock (UnitsInStock > 0) and belong to the "Condiments" category.
+
+            //var allProducts = ProductList.Where(p=>p.UnitsInStock > 0 && p.Category == "Condiments");
+
+            //foreach (var product in allProducts)
+            //{
+            //    Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}, Category:{product.Category}");
+            //}
+
+
+            //Question 5
+            //5. Create a new anonymous type with three properties:
+            //● Name → the product name
+            //● Price → the unit price
+            //● StockStatus → a string: "Available" if
+            //UnitsInStock > 0, otherwise "Out of Stock"
+            //● Print the result.
+
+            //var productsWithAnonymousType = ProductList.Select(p=> new{Name= p.ProductName,Price= p.UnitPrice,StockStatus= p.UnitsInStock > 0 ? "Available" : "Out of Stock"});
+
+            //foreach (var product in productsWithAnonymousType)
+            //{
+            //    Console.WriteLine($"Name: {product.Name},Price: {product.Price},Stock: {product.StockStatus}");
+            //}
+
+
+            //Question 6
+            //6. Print each product's name along with its position (1 - based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+            //var productsNameWithPosition = ProductList.Select((p,index) => $"{index + 1}.{p.ProductName}").ToList();
+
+            //foreach (var name in productsNameWithPosition)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
         }
     }
 }
