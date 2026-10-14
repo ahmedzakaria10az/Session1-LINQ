@@ -16,6 +16,8 @@ namespace Session1_LINQ
                 Console.WriteLine($"Name:{product.ProductName}, Price:{product.UnitPrice}");
             }
 
+
+            //Question 2
             //2. Get a list of only the product names from ProductList. Print each name.
             var productNames = ProductList.Select(p => p.ProductName);
 
