@@ -68,6 +68,16 @@ namespace Session1_LINQ
             //    Console.WriteLine($"Name: {product.Name},Price: {product.Price},Stock: {product.StockStatus}");
             //}
 
+
+            //Question 6
+            //6. Print each product's name along with its position (1 - based) in the list. Expected format: 1.Chai, 2.Chang, etc.
+            //var productsNameWithPosition = ProductList.Select((p,index) => $"{index + 1}.{p.ProductName}").ToList();
+
+            //foreach (var name in productsNameWithPosition)
+            //{
+            //    Console.WriteLine(name);
+            //}
+
         }
     }
 }
